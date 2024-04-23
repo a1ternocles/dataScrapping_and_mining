@@ -8,7 +8,8 @@ soup = BeautifulSoup(html,'html.parser')
 # # print(type(html))
 # print(soup.title.parent)
 
-with open('req\\bs4quotes.txt','w') as file:
+with open('bs4\\bs4quotes.txt','w') as file:
     for tag in soup.findAll('span',{'class': 'text'}):
         file.write(tag.string)
         file.write('\n')
+        
