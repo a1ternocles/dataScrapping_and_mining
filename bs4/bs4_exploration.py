@@ -5,4 +5,5 @@ soup = BeautifulSoup(html, 'html.parser')
 tag = soup.b
 
 # print(tag['id'])
-print(tag['class'])
+# print(tag['class'])
+
